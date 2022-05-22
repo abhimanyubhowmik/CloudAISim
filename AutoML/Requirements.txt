@@ -1,0 +1,8 @@
+numpy
+pandas
+sklearn
+flask
+google-cloud-storage
+fsspec
+gcsfs
+autokeras
