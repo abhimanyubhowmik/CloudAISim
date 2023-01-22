@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 # Use the full page instead of a narrow central column
 st.set_page_config(layout="wide")
 
-title_text = 'AutoHealthX: Brest Cancer Dataset'
+title_text = 'AutoHealthX: Breast Cancer Dataset'
 st.markdown(f"<h2 style='text-align: center;'><b>{title_text}</b></h2>", unsafe_allow_html=True)
 
 # Space out the maps so the first one is 2x the size of the other three

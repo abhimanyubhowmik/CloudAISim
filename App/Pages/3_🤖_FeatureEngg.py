@@ -13,7 +13,7 @@ from google.cloud import storage
 
 st.set_page_config(layout="wide")
 
-title_text = 'AutoHealthX: Feture Engineering'
+title_text = 'AutoHealthX: Feature Engineering'
 st.markdown(f"<h2 style='text-align: center;'><b>{title_text}</b></h2>", unsafe_allow_html=True)
 
 df = st.session_state['df']

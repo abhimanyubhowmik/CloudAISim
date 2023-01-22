@@ -77,10 +77,17 @@ from google.oauth2 import service_account
 from google.cloud import storage
 from streamlit_tensorboard import st_tensorboard
 
+st.set_page_config(layout="wide")
+
+title_text = 'AutoHealthX: AutoML Model'
+st.markdown(f"<h2 style='text-align: center;'><b>{title_text}</b></h2>", unsafe_allow_html=True)
+
 credentials = service_account.Credentials.from_service_account_info(
     st.secrets["gcp_service_account"]
 )
 client = storage.Client(credentials=credentials)
+
+
 
 
 @st.experimental_memo(ttl=600)
