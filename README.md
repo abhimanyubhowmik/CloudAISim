@@ -1,35 +1,132 @@
-# Auto ML and Explainable AI using Serverless Functions
+<h1> AutoHealthX: Automated machine learning and Explainable AI
+based Cloud functions for Healthcare</h1>
 
-Research oriented, open source, Cloud Native solution using serverless cloud function to generate auto ml models and interpret results using Explainable AI solutions.
+[Abhimanyu Bhowmik](https://scholar.google.com/citations?user=r3bzJ7oAAAAJ&hl=en), [Madhushree Sannigrahi](https://scholar.google.com/citations?user=Mtnm7igAAAAJ&hl=en), [Deepraj Chowdhury](https://scholar.google.com/citations?user=9sZgeV4AAAAJ&hl=en), [Ajoy Dey](https://scholar.google.com/citations?hl=en&user=J0I2lyYAAAAJ)
 
-Google Cloud Functions (1st Gen) is selected as a serverless solution to build out experimental architecture. Using cloud functions in python 3.9 runtimes the proposed experiment was conducted. The memory requirements time out of the runtime environment is set up according to the particular function’s workload.
+[![paper](https://img.shields.io/badge/IEEE-Paper-brightgreen)](https://doi.org/10.1002/itl2.395) 
+[![dataset](https://img.shields.io/badge/Kaggle-Dataset-blue)](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data) 
+[![models](https://img.shields.io/badge/Saved-Models-red)](https://github.com/abhimanyubhowmik/AutoHealthX/tree/main/App/models)
+[![slides](https://img.shields.io/badge/Presentation-Slides-yellow)](https://docs.google.com/presentation/d/1btUACelHTbZ4aX9lCH3yg1O-jxsZWn4l/edit?usp=sharing&ouid=103859519837437819731&rtpof=true&sd=true) 
 
-Google Cloud Storage is used for storing the data and their respective output. Cloud Storage events are used as triggers to the respective cloud functions.
+> **Abstract:** *There is a significant gap between the AI and healthcare industries in the modern world. This is mostly due to a lack of resources and technical expertise. Therefore, our goal in this study is to build a bridge and open up AI to the non-tech population, particularly the healthcare industry. But a significant barrier is that AI needs to be adaptable enough to operate in many contexts with various datasets. To do this, we propose a serverless AutoML model with explainable AI. A user-friendly interface for non-professionals has also been created using an interactive web application. Any non-technical user may run the full model, which has a 98 \% accuracy rate. AutoHealthX would enable us to utilize the immense potential of AI for enhancing the healthcare sector and providing better service to patients.*
 
-### Proposed solution:
+<br><br>
 
-In the proposed architecture 2 subsequent cloud functions are used for generating the auto ml model, predicting the results and explaining the predicted results. For the auto ml model, open-source autokeras python library is used, and Lime library is used for explaining the model. To explain the global decision boundary of the model over a sample set of observations SP-Lime (Submodular Pick Locally Interpretable Model-Agnostic Explanations) is used instead of vanilla Lime explanations. 
+<h2>Dataset</h2>
 
-Upload dataset into Cloud Storage:
+Firstly, the “Breast Cancer Wisconsin (Diagnostic) Data Set” by “UCI ML Repository” is implemented on the novel methodology for the paper \cite{1st}. The dataset contains tabular data with 32 features and over 569 data points. A fine needle aspirate (FNA) of a breast lump is used to generate the features from a digital image in 3-dimensional space as described by Bannett et al. \cite{bennett1992robust}. They characterise the properties of all the observable cell nuclei in the image. Every data point is classified into either Benign(B) or Malignant(M) class.
 
-![](Images/Data.png)
+Secondly, the architecture is applied to the “Heart Disease Cleveland dataset” Dataset by “UCI ML Repository” \cite{second}. The dataset constitutes over 300 patients’ data with 75 attributes, However, only 14 of the feature are taken into consideration for determining whether a patient has heart disease or not. 
 
-### * Function 1:
+Thirdly, the “Diabetes dataset”, originally from the National Institute of Diabetes and Digestive and Kidney Diseases, is used in this paper \cite{third}. The goal is to determine if a patient has diabetes based on diagnostic parameters. The implemented Diabetes dataset is a subset of an enormous dataset with 10 attributes and 768 instances. All patients are Pima Indian females who are at least 21 years old.
 
-The first cloud function is triggered when the clean data is uploaded to the specific bucket, it will generate 5 different models from the training data (70% of given data) and train them up to 100 epochs, the best performer in-termes of accuracy will be chosen for the particular dataset. The selected model will be checked on the test data (30% of given data) and the performance matrices ( Confusion Matrix, Classification Report ) will be generated, All the training and testing data along with performance matrices and the model itself will be exported in specific cloud buckets. The model is exported in .h5 format, which is TensorFlow Keras standard format for exporting ML models. 
 
-Generating AutoML Model :
+<h2>Proposed Methodology</h2>
 
-![](Images/Model.png)
+<br><br>
 
-Getting Results:
+<div align="center">
+<img src = "Images/AutoHealthX.png" width="100%">
+<p>Overall view of the proposed model: AutohelathX </p>
+</div>
 
-![](Images/CR.png)
+<br>
 
-### * Function 2:
+<h2>Results </h2>
+<h3>Case I: Breast Cancer Wisconsin Diagnosis</h3>
 
-The second cloud function acts when the model is generated and uploaded in its particular cloud storage, it receives the model along with the training and testing data. The function generates SP-Lime explanations. For generating the explanations a random 20 test data samples were chosen, among them 5 results were generated. The resulting graphs were merged into a single HTML file and uploaded to a cloud storage bucket. Data upload, and prediction as well as explanations can be retrieve by any client-side web/mobile application using google cloud SDK.
+<div align="center">
+<img src = "Images/BC.jpg" width="60%">
+<p>ROC-AUC curve and Confusion Matrix 75:25 train-validation ratio</p>
+</div>
 
-Generating Explanations of model:
 
-![](Images/Lime.png)
+<h3>Case II: Heart Disease Cleveland Dataset</h3>
+
+<div align="center">
+<img src = "Images/hd.jpg" width="60%">
+<p>ROC-AUC curve and Confusion Matrix 75:25 train-validation ratio</p>
+</div>
+<br><br>
+
+
+<h3>Case III: Diabetes Dataset</h3>
+
+<div align="center">
+<img src = "Images/diabetes.jpg" width="60%">
+<p>ROC-AUC curve and Confusion Matrix 75:25 train-validation ratio</p>
+</div>
+<br><br>
+
+<h3>Case IV: COVID-19 Dataset</h3>
+
+<div align="center">
+<img src = "Images/cov.jpg" width="60%">
+<p>ROC-AUC curve and Confusion Matrix 75:25 train-validation ratio</p>
+</div>
+<br><br>
+<hr />
+
+<h2>AutohealthX Application</h2>
+<br>
+
+<h3>The Dataset page with Breast Cancer Dataset</h3>
+
+<div align="center">
+<img src = "Images/Dataset.jpeg" width="60%">
+
+</div>
+<br>
+
+<h3>The EDA page with Breast Cancer Dataset</h3>
+
+<div align="center">
+<img src = "Images/eda.png" width="60%">
+</div>
+<br><br>
+
+
+<h3>The Feature Engineering page with Breast Cancer Dataset</h3>
+
+<div align="center">
+<img src = "Images/FE.jpeg" width="60%">
+</div>
+<br><br>
+
+<h3>The Model page with Breast Cancer Dataset</h3>
+
+<div align="center">
+<img src = "Images/Model.jpeg" width="60%">
+</div>
+<br><br>
+
+<h3>The Results page with Breast Cancer Dataset</h3>
+
+<div align="center">
+<img src = "Images/results.png" width="60%">
+</div>
+<br><br>
+
+<h3>The LIME Explainer page with Breast Cancer Dataset</h3>
+
+<div align="center">
+<img src = "Images/lime 2.png" width="60%">
+</div>
+<br><br>
+
+<hr />
+
+
+<h2>Cite our work</h2>
+
+    
+    Bhowmik A., Sannigrahi M., Chowdhury D., Dey A. (2023) AutoHealthX: Automated machine learning and Explainable AI
+    based Cloud functions for Healthcare (Prepriint).
+
+
+
+<hr />
+
+<h2>Contact</h2>
+For any queries, please contact: <a href="mailto:bhowmikabhimnayu@gmail.com">bhowmikabhimnayu@gmail.com</a>
+
