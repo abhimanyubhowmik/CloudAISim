@@ -1,14 +1,13 @@
-<h1> AutoHealthX: Automated machine learning and Explainable AI
-based Cloud functions for Healthcare</h1>
+<h1> AI meets Cloud: One Framework, Many Application</h1>
 
-[Abhimanyu Bhowmik](https://scholar.google.com/citations?user=r3bzJ7oAAAAJ&hl=en), [Madhushree Sannigrahi](https://scholar.google.com/citations?user=Mtnm7igAAAAJ&hl=en), [Deepraj Chowdhury](https://scholar.google.com/citations?user=9sZgeV4AAAAJ&hl=en), [Ajoy Dey](https://scholar.google.com/citations?hl=en&user=J0I2lyYAAAAJ)
+[Abhimanyu Bhowmik](https://scholar.google.com/citations?user=r3bzJ7oAAAAJ&hl=en), [Madhushree Sannigrahi](https://scholar.google.com/citations?user=Mtnm7igAAAAJ&hl=en), [Deepraj Chowdhury](https://scholar.google.com/citations?user=9sZgeV4AAAAJ&hl=en), [Ajoy Dey](https://scholar.google.com/citations?hl=en&user=J0I2lyYAAAAJ), [Sukhpal Singh Gill](https://scholar.google.co.uk/citations?user=NHkWom4AAAAJ&hl=en)
 
 [![paper](https://img.shields.io/badge/Submitted-Report-brightgreen)](https://github.com/abhimanyubhowmik/AutoHealthX/blob/main/Report/Minor_Project.pdf) 
 [![dataset](https://img.shields.io/badge/Kaggle-Dataset-blue)](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data) 
 [![models](https://img.shields.io/badge/Saved-Models-red)](https://github.com/abhimanyubhowmik/AutoHealthX/tree/main/App/models)
 [![slides](https://img.shields.io/badge/Presentation-Slides-yellow)](https://docs.google.com/presentation/d/1btUACelHTbZ4aX9lCH3yg1O-jxsZWn4l/edit?usp=sharing&ouid=103859519837437819731&rtpof=true&sd=true) 
 
-> **Abstract:** *There is a significant gap between the AI and healthcare industries in the modern world. This is mostly due to a lack of resources and technical expertise. Therefore, our goal in this study is to build a bridge and open up AI to the non-tech population, particularly the healthcare industry. But a significant barrier is that AI needs to be adaptable enough to operate in many contexts with various datasets. To do this, we propose a serverless AutoML model with explainable AI. A user-friendly interface for non-professionals has also been created using an interactive web application. Any non-technical user may run the full model, which has a 98 \% accuracy rate. AutoHealthX would enable us to utilize the immense potential of AI for enhancing the healthcare sector and providing better service to patients.*
+> **Abstract:** *There is a significant gap between the AI and industries in the modern world. This is mostly due to the lack of resources and technical expertise. Therefore, our goal in this study is to build a bridge and open up AI to the non-tech population, particularly the healthcare industry. However, a significant barrier is that AI needs to be adaptable enough to operate in many contexts with various datasets. To do this, we propose a serverless AutoML model with explainable AI. A user-friendly interface for non-professionals has also been created using an interactive web application. Any non-technical user may run the full model, which has a 98 \% accuracy rate. The suggested application aims to unlock the immense potential of AI across various fields, starting with healthcare.*
 
 <br><br>
 
