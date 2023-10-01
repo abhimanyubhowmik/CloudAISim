@@ -119,8 +119,7 @@ Thirdly, the “Diabetes dataset”, originally from the National Institute of D
 <h2>Cite our work</h2>
 
     
-    Bhowmik A., Sannigrahi M., Chowdhury D., Dey A. (2023) AutoHealthX: Automated machine learning and Explainable AI
-    based Cloud functions for Healthcare (Prepriint).
+    Bhowmik A., Sannigrahi M., Chowdhury D., Dey A., Gill S. (2023) AI meets Cloud: One Framework, Many Application (Prepriint).
 
 
 
