@@ -85,7 +85,7 @@ Finally the “Covid-19” is a dataset, used in the paper which contains data f
 <h3>The Dataset page with Breast Cancer Dataset</h3>
 
 <div align="center">
-<img src = "Images/Dataset.jpeg" width="60%">
+<img src = "Images/Dataset.png" width="60%">
 
 </div>
 <br>
@@ -101,14 +101,14 @@ Finally the “Covid-19” is a dataset, used in the paper which contains data f
 <h3>The Feature Engineering page with Breast Cancer Dataset</h3>
 
 <div align="center">
-<img src = "Images/FE.jpeg" width="60%">
+<img src = "Images/FE.png" width="60%">
 </div>
 <br><br>
 
 <h3>The Model page with Breast Cancer Dataset</h3>
 
 <div align="center">
-<img src = "Images/Model.jpeg" width="60%">
+<img src = "Images/Model.png" width="60%">
 </div>
 <br><br>
 
