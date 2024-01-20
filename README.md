@@ -12,6 +12,13 @@
 
 <br><br>
 
+<div align="center">
+<img src = "Images/model 2.png" width="100%">
+<p>CloudAISim</p>
+</div>
+
+<br>
+
 <h2>Contributions</h2>
 
 1. Proposing a toolkit called CloudAISim for efficient explainable machine learning technique modelling and implementation in the healthcare domain.
@@ -40,7 +47,7 @@ Finally the “Covid-19” is a dataset, used in the paper which contains data f
 
 <div align="center">
 <img src = "Images/AutoHealthX.png" width="100%">
-<p>Overall view of the proposed model: AutohelathX </p>
+<p>Overall view of the proposed model: CloudAISim </p>
 </div>
 
 <br>
