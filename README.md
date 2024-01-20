@@ -2,6 +2,7 @@
 
 [Abhimanyu Bhowmik](https://scholar.google.com/citations?user=r3bzJ7oAAAAJ&hl=en), [Madhushree Sannigrahi](https://scholar.google.com/citations?user=Mtnm7igAAAAJ&hl=en), [Deepraj Chowdhury](https://scholar.google.com/citations?user=9sZgeV4AAAAJ&hl=en), [Ajoy Dey](https://scholar.google.com/citations?hl=en&user=J0I2lyYAAAAJ), [Sukhpal Singh Gill](https://scholar.google.co.uk/citations?user=NHkWom4AAAAJ&hl=en)
 
+[![paper](https://img.shields.io/badge/Elsevier-Journal-orange)](https://doi.org/10.1016/j.tbench.2024.100150) 
 [![paper](https://img.shields.io/badge/Submitted-Report-brightgreen)](https://github.com/abhimanyubhowmik/AutoHealthX/blob/main/Report/Minor_Project.pdf) 
 [![dataset](https://img.shields.io/badge/Kaggle-Dataset-blue)](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data) 
 [![models](https://img.shields.io/badge/Saved-Models-red)](https://github.com/abhimanyubhowmik/AutoHealthX/tree/main/App/models)
