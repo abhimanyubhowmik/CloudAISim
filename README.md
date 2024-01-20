@@ -50,7 +50,34 @@ Finally the “Covid-19” is a dataset, used in the paper which contains data f
 <p>Overall view of the proposed model: CloudAISim </p>
 </div>
 
-<br>
+<be>
+
+<h2>Code Execution Setup</h2>
+
+Prerequisites:
+
+* ```
+  Pip
+  Python 3.7+
+  autokeras==1.0.19
+  keras==2.12.0
+  tensorflow==2.12.0
+  streamlit==1.21.0
+  ```
+* Clone the Project Repository : ```git@github.com:abhimanyubhowmik/CloudAISim.git```
+* Add these in Google Cloud functions:
+  ```
+  Feature_Engineering
+  Auto_ML New
+  Explainable Ai
+  ```
+* Download the dependencies from "requirements.txt"
+  ``` pip install -r CloudAISim/App/requirements.txt```
+
+* Create a Google BigQuery storage client with name ```auto-ml-and-explainable-ai``` and connect it with the project.
+* Connect the Streamlit App with GCS Storage Service: https://docs.streamlit.io/knowledge-base/tutorials/databases/gcs
+* Run the Stramlit App: ```streamlit run CloudAISim/App/1_📈_Data.py```
+
 
 <h2>Results </h2>
 <h3>Case I: Breast Cancer Wisconsin Diagnosis</h3>
@@ -87,7 +114,7 @@ Finally the “Covid-19” is a dataset, used in the paper which contains data f
 <br><br>
 <hr />
 
-<h2>AutohealthX Application</h2>
+<h2>CloudAISim Application</h2>
 <br>
 
 <h3>The Dataset page with Breast Cancer Dataset</h3>
