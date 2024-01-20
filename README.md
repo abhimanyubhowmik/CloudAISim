@@ -122,7 +122,7 @@ Finally the “Covid-19” is a dataset, used in the paper which contains data f
 <h3>The LIME Explainer page with Breast Cancer Dataset</h3>
 
 <div align="center">
-<img src = "Images/lime 2.png" width="60%">
+<img src = "Images/lime.png" width="60%">
 </div>
 <br><br>
 
